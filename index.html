@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Accueil</title>
+</head>
+
+<body>
+    <!-- HARDER -->
+    <header class="sticky-top">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light p-3">
+            <div class="container-fluid">
+                <!-- LOGO -->
+                <a class="navbar-brand border px-3 py-2 bg-light rounded-4" href="#">Logo</a>
+
+                <!-- BURGER -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- MENU -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#accueil">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#presentation">À propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTENU -->
+    <main class="container-fluid">
+
+        <!-- HEROS -->
+        <section id="accueil" class="px-3 pt-4 pb-3">
+            <div>
+                <h1 class="text-center my-3">Lorem Ipsum</h1>
+            </div>
+
+            <div>
+                <img src="./assets/images/carousel.avif" class="img-fluid w-100 rounded-4 my-3" alt="">
+            </div>
+        </section>
+
+        <hr id="presentation" class="danger col-8 mx-auto">
+
+        <!-- PRESENTATION -->
+        <section class="row p-3 align-items-center">
+            <h2 class="text-center my-3">Qui suis-je ?</h2>
+
+            <div class="d-flex justify-content-center my-3">
+                <img src="./assets/images/pp.jpg" class="img-fluid rounded-circle border w-50" alt="">
+            </div>
+
+            <div>
+                <p class="text-justify my-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, accusantium ut ratione inventore
+                    distinctio neque aliquid explicabo error ex dolorem beatae animi saepe odit officia assumenda
+                    necessitatibus, dolore, reiciendis alias atque incidunt dignissimos nobis in provident. Temporibus
+                    illum illo incidunt. Tempora eaque deleniti excepturi vitae, accusantium perferendis corrupti.
+                    Laborum earum quae amet quo distinctio dolorem. Voluptatem nulla obcaecati possimus nostrum sed
+                    perspiciatis, vel ullam soluta quae. Consequatur tempora ducimus odio aspernatur facilis ad
+                    consequuntur fugiat accusantium suscipit error, laudantium ab ullam adipisci! Omnis dolore rem
+                    incidunt sed animi, adipisci sint harum, perspiciatis pariatur maxime, dicta obcaecati ipsum minima!
+                    Culpa.</p>
+            </div>
+        </section>
+
+        <hr id="services" class="danger col-8 mx-auto">
+
+        <!-- SERVICES -->
+        <section class="p-3 row justify-content-center align-items-center gap-4">
+            <div class="border p-3 rounded-4 text-center shadow" id="card">
+                <h3 class="mt-2 mb-3">Horaires :</h3>
+                <div class="d-flex align-items-center">
+                    <p class="col-6 my-2">Du mardi au vendredi</p>
+                    <p class="col-6 my-2">de 8h à 18h</p>
+                </div>
+            </div>
+
+
+            <div class="border p-3 rounded-4 text-center shadow" id="card">
+                <h3 class="mt-2 mb-3">Activités :</h3>
+                <div class="row align-items-center">
+                    <p class="col-6 my-2">Picnic</p>
+                    <p class="col-6 my-2">Cinema</p>
+                    <p class="col-6 my-2">Bibliothèque</p>
+                    <p class="col-6 my-2">Puzzles</p>
+                    <p class="col-6 my-2">Peinture</p>
+                </div>
+            </div>
+
+
+            <div class="border p-3 rounded-4 text-center shadow" id="card">
+                <h3 class="mt-2 mb-3">Âge :</h3>
+                <p class="my-2">de 0 à 3 ans</p>
+            </div>
+
+
+            <div class="border p-3 rounded-4 text-center shadow" id="card">
+                <h3 class="mt-2 mb-3">Disponibilités :</h3>
+                <p class="my-2">0 place(s) restante(s)</p>
+            </div>
+
+            <div class="border p-3 rounded-4 text-center shadow" id="card">
+                <h3 class="mt-2 mb-3">Tarifs :</h3>
+                <p class="my-2">0.00€ de l'heure</p>
+            </div>
+        </section>
+
+        <hr id="contact" class="danger col-8 mx-auto">
+
+
+        <!-- FORMULAIRE -->
+        <section class="px-3 pt-3 pb-5 align-items-center">
+            <form action="">
+                <fieldset>
+                    <legend class="text-center pb-3">Me contacter</legend>
+                    <div class="">
+                        <input type="text" name="nom" id="form" placeholder="Nom" required class="form-control mb-3">
+
+                        <input type="text" name="prenom" id="form" placeholder="Prénom" required
+                            class="form-control mb-3">
+
+                        <input type="email" name="mail" id="form" placeholder="Mail" required class="form-control mb-3">
+
+                        <input type="tel" name="numero" id="form" placeholder="Numéro" required
+                            class="form-control mb-3">
+
+                        <textarea name="message" id="form" placeholder="Message" required
+                            class="form-control mb-3"></textarea>
+
+                        <div class="d-flex justify-content-center pt-2">
+                            <input type="submit" value="Envoyer" class="btn px-4" id="btn">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer mx-auto container-fluid row align-items-center text-center p-3">
+            <h4 class="mt-2 mb-3">Informations personnelles</h4>
+
+            <p class="col my-2">mail.mail@gmail.com</p>
+            <p class="col my-2"> 00 00 00 00 00</p>
+            <p class="my-2">Addresse</p>
+        </div>
+    </footer>
+
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
